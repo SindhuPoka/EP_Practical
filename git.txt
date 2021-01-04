@@ -1,0 +1,16 @@
+1.Open Eclipse
+2.Quick Access
+type git
+select git clone
+
+3. Copy the clone URL and paste it in the URI
+provide the git hub credentials
+
+4. select master branch--->next -->next -->finish
+
+5.right click on the project --->team --->share project-->select the repository-->finish
+
+6.right click on the project --->team --->commit--->select the files from the unstaged area to 
+staged area-->*commit msg--->commit and push
+
+7. check your work on github
