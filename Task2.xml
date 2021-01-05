@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Students_info  SYSTEM "Task2.dtd">
+<Students_info>
+	<student>
+		<regno>190031098</regno>
+		<name>Rashi</name>
+		<avg>92</avg>
+		<dob>10-01-2002</dob>
+		<time>2:00</time>
+		<mobile>8885930345</mobile>
+		<distinction>YES</distinction>
+	</student>
+	<student>
+		<regno>190031099</regno>
+		<name>Siri</name>
+		<avg>96</avg>
+		<dob>21-04-2002</dob>
+		<time>4:30</time>
+		<mobile>8885903965</mobile>
+		<distinction>YES</distinction>
+	</student>
+	<student>
+		<regno>190031398</regno>
+		<name>Anusha</name>
+		<avg>82</avg>
+		<dob>11-11-2002</dob>
+		<time>5:30</time>
+		<mobile>7989182105</mobile>
+		<distinction>YES</distinction>
+	</student>
+	<student>
+		<regno>190032098</regno>
+		<name>Ritesh</name>
+		<avg>79</avg>
+		<dob>12-05-2002</dob>
+		<time>7:00</time>
+		<mobile>888366345</mobile>
+		<distinction>YES</distinction>
+	</student>
+	<student>
+		<regno>190031114</regno>
+		<name>Sriram</name>
+		<avg>89</avg>
+		<dob>11-10-2002</dob>
+		<time>2:30</time>
+		<mobile>9154679807</mobile>
+		<distinction>YES</distinction>
+	</student>
+</Students_info>
