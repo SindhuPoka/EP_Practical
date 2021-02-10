@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body {background-color: SpringGreen;}
+h1{color:Salmon;}
+input[type=submit]{
+  width:70%;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px ;
+  background-color: IndianRed;
+  border-radius: 8px;
+  position: relative;
+  bottom: -10px;
+  right: 20px;}
+</style>
+<script>
+function validateform(){
+	var email=document.myform.email.value;
+	var pswd=document.myform.pswd.value;
+	if(email==null || email==""){
+		alert("Email can't be empty");
+		return false;
+	}
+	else if(pswd==null || pswd==""){
+		alert("Password can't be empty");
+		return false;
+		}
+	else{
+		alert("Welcome");
+	}
+}
+</script>
+<body>
+<form name="myform" action="LoginInsert" method="get" onsubmit=" return validateform()">
+<table align="center">
+<tr><td><h1>Login to give feedback</h1></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"><br></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pswd"><br></td></tr>
+<a href="feedback.html">
+<tr><td><input type="submit" value="login" style="float:right;"><br></td></tr>
+</a>
+</table>
+</form>
+</body>
+</html>
