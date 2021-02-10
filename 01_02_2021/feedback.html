@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body{background-color:Turquoise;}
+</style>
+<script>
+function validateform(){
+	if(document.myform.user1.selectedIndex==0)
+	{ alert("Please select properly");
+	document.myform.user1.focus();
+	return false;
+	}
+	return true;
+}
+</script>
+<body>
+<form name="myform"action="FeedbackInsert" method="post" onsubmit="return validateform();">
+<table align="center">
+<tr><td><h1 style="color:yellow;"> FEEDBACK FORM</h1></td></tr>
+<tr><td><label for="user">Q1.ENGAGING & SUPPORTING ALL STUDENTS IN LEARNING?</label></td></tr>
+<tr><td><select name="user1" value="feedback" required>
+  <option value="None">None</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfied">Satisfied</option>
+  <option value="NotSatisfied">Not Satisfied</option>
+</select><br></td></tr>
+<tr><td><label for="user">Q2.ABOUT COMMUNICATION SKILLS?</label></td></tr>
+<td><select name="user2" value="feedback" required>
+  <option value="None">None</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfied">Satisfied</option>
+  <option value="NotSatisfied">Not Satisfied</option>
+</select><br></td>
+<tr><td><label for="user">Q3.INTERACTION WITH STUDENTS?</label></td></tr>
+<td><select name="user3" value="feedback" required>
+  <option value="None">None</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfied">Satisfied</option>
+  <option value="NotSatisfied">Not Satisfied</option>
+</select></td><br>
+<tr><td><label for="user">4.CLEARING DOUBTS?</label></td></tr>
+<td><select name="user4" value="feedback" required>
+  <option value="None">None</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfied">Satisfied</option>
+  <option value="NotSatisfied">Not Satisfied</option>
+</select><br></td>
+<tr><td><label for="user">Q5.COVERING ALL TOPICS OF THE COURSE IN TIME?</label></td></tr>
+<td><select name="user5" value="feedback" required>
+  <option value="None">None</option>
+  <option value="Excellent">Excellent</option>
+  <option value="Good">Good</option>
+  <option value="Satisfied">Satisfied</option>
+  <option value="NotSatisfied">Not Satisfied</option>
+</select><br></td>
+<tr><td><input type="submit" value="submit" style="float:right;"></td></tr>
+</table>
+</form>
+</body>
+</html>
