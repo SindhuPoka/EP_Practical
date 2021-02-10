@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body {background-color: powderblue;}
+input[type=submit]{
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: brown;
+  border-radius: 12px;}
+</style>
+<script>
+function validateform(){
+	var regno=document.myform.regno.value;
+	var name=document.myform.name.value;
+	var email=document.myform.email.value;
+	var pswd=document.myform.pswd.value;
+	if(regno==null || regno==""){
+		alert("Regno can't be blank");
+		return false;
+	}
+	else if(name==null || name==""){
+		alert("Name can't be blank");
+		return false;
+	}
+	else if(email==null|| email==""){
+		alert("Email can't be blank");
+		return false;
+	}
+	else if(pswd==null|| pswd==""){
+		alert("Password can't be blank");
+		return false;
+	}
+	else{
+		alert("Welcome");
+	}
+}
+</script>
+
+<body>
+<form name="myform" action="RegisterInsert" method="post"  onsubmit="return validateform()">
+<table align="center">
+<tr><td><h1 style=" color:red";>Registration Form</h1></td></tr>
+<tr><td>Regno:</td><td><input type="text" name="regno"><br></td></tr>
+<tr><td>Name:</td><td><input type="text" name="name"><br></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"><br></td></tr>
+<tr><td>Password:</td><td><input type="password" name="pswd"><br></td></tr>
+<tr><td><input type="submit" value="register" style="float: right;"></td></tr>
+</table>
+</form>
+</body>
+</html>
